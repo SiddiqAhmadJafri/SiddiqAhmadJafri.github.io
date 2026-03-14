@@ -10,17 +10,15 @@ text-align:center;
 .navbar{
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:15px 40px;
 background:black;
 color:white;
 }
 
-.navlinks a{
+.navbar a{
 color:white;
-margin:0 15px;
+margin:0 10px;
 text-decoration:none;
-font-size:18px;
 }
 
 /* HERO */
@@ -35,19 +33,14 @@ background:linear-gradient(135deg,#ff9a9e,#fad0c4);
 color:white;
 }
 
-.shop-btn{
-padding:12px 30px;
-font-size:18px;
+button{
+padding:10px 20px;
 border:none;
-background:black;
+background:#ff4d6d;
 color:white;
 cursor:pointer;
-margin-top:20px;
-transition:0.3s;
-}
-
-.shop-btn:hover{
-transform:scale(1.1);
+margin-top:10px;
+border-radius:5px;
 }
 
 /* PRODUCT GRID */
@@ -68,7 +61,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
 
 .card img{
 width:100%;
-display:block;
 transition:0.4s;
 }
 
@@ -96,17 +88,7 @@ transform:scale(1.1);
 opacity:1;
 }
 
-button{
-padding:10px 20px;
-border:none;
-background:#ff4d6d;
-color:white;
-cursor:pointer;
-border-radius:5px;
-margin-top:10px;
-}
-
-/* POLAROID STYLE */
+/* POLAROID */
 
 .polaroid{
 background:white;
@@ -126,4 +108,18 @@ animation:float 3s infinite ease-in-out;
 50%{transform:translateY(-10px)}
 100%{transform:translateY(0)}
 
+}
+
+/* CART */
+
+#cartItems{
+margin-top:30px;
+}
+
+.cart-item{
+background:white;
+padding:10px;
+margin:10px auto;
+width:300px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
 }
