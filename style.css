@@ -10,9 +10,16 @@ text-align:center;
 .navbar{
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:15px 40px;
 background:black;
 color:white;
+}
+
+.navbar div{
+display:flex;
+gap:20px;
+
 }
 
 .navbar a{
