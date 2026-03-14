@@ -3,36 +3,58 @@
 <head>
 <title>Products</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 
 <body>
 
-<h1>Products</h1>
+<nav class="navbar">
+<h2 class="logo">Aesthetic Store</h2>
 
-<div class="product-container">
+<div class="navlinks">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+</div>
+</nav>
 
-<div class="product-card">
+<h1 class="title">Products</h1>
+
+<div class="grid">
+
+<div class="card polaroid">
 <img src="https://picsum.photos/300/300">
+
 <div class="overlay">
 <h3>Polaroid Pack</h3>
 <p>₹299</p>
-</div>
+<button onclick="addCart('Polaroid Pack')">Add to Cart</button>
 </div>
 
-<div class="product-card">
+</div>
+
+
+<div class="card">
 <img src="https://picsum.photos/301/300">
+
 <div class="overlay">
 <h3>Magazine</h3>
 <p>₹399</p>
-</div>
+<button onclick="addCart('Magazine')">Add to Cart</button>
 </div>
 
-<div class="product-card">
+</div>
+
+
+<div class="card sticker">
 <img src="https://picsum.photos/302/300">
+
 <div class="overlay">
 <h3>Sticker Pack</h3>
 <p>₹199</p>
+<button onclick="addCart('Sticker Pack')">Add to Cart</button>
 </div>
+
 </div>
 
 </div>
