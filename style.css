@@ -1,33 +1,74 @@
 body{
+margin:0;
 font-family:Arial;
+background:#fafafa;
 text-align:center;
-background:#f4f4f4;
 }
 
-nav a{
-margin:10px;
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:black;
+color:white;
+}
+
+.navlinks a{
+color:white;
+margin:0 15px;
 text-decoration:none;
 font-size:18px;
 }
 
-.product-container{
+/* HERO */
+
+.hero{
+height:80vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:40px;
+align-items:center;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+color:white;
 }
 
-.product-card{
+.shop-btn{
+padding:12px 30px;
+font-size:18px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+margin-top:20px;
+transition:0.3s;
+}
+
+.shop-btn:hover{
+transform:scale(1.1);
+}
+
+/* PRODUCT GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
 position:relative;
-width:250px;
 overflow:hidden;
 border-radius:10px;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-.product-card img{
+.card img{
 width:100%;
+display:block;
 transition:0.4s;
 }
 
@@ -47,10 +88,42 @@ opacity:0;
 transition:0.4s;
 }
 
-.product-card:hover img{
+.card:hover img{
 transform:scale(1.1);
 }
 
-.product-card:hover .overlay{
+.card:hover .overlay{
 opacity:1;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+border-radius:5px;
+margin-top:10px;
+}
+
+/* POLAROID STYLE */
+
+.polaroid{
+background:white;
+padding:10px 10px 40px 10px;
+transform:rotate(-2deg);
+}
+
+/* STICKER FLOAT */
+
+.sticker{
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+
 }
